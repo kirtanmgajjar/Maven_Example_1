@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-08T14:18:44 IST" name="Suite" finished-at="2023-01-08T14:19:04 IST" duration-ms="19783">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:allTest.CucumberRunner@3c46e67a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-01-08T14:18:44 IST" name="Test" finished-at="2023-01-08T14:19:04 IST" duration-ms="19783">
+      <class name="allTest.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:allTest.CucumberRunner@3c46e67a]" started-at="2023-01-08T14:18:44 IST" name="setUpClass" finished-at="2023-01-08T14:18:46 IST" duration-ms="1182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7671cb68]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:allTest.CucumberRunner@3c46e67a]" started-at="2023-01-08T14:18:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-08T14:18:52 IST" duration-ms="6760" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To submit the basic contact form with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Basic Contact Form"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a7c4d1f1f9c90692cc05055341783cd, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Kirtan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63885/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a7c4d1f1f9c90692cc05055341783cd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a7c4d1f1f9c90692cc05055341783cd, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Kirtan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63885/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a7c4d1f1f9c90692cc05055341783cd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:301)
+at pages.ThankYouPage.verifyPage(ThankYouPage.java:33)
+at allTest.StepDefinitions.navigationToThankYouPage(StepDefinitions.java:54)
+at ✽.User is redirected to Thank You Page(file:///G:/Eclipse%20Workspace/2234444_SimpleCucumberProjectUsingScenarioOutline/src/test/resources/features/BasicContactForm.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:allTest.CucumberRunner@3c46e67a]" started-at="2023-01-08T14:18:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-08T14:19:00 IST" duration-ms="7159" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To submit the basic contact form with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Basic Contact Form"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [558fc53383e66e176cd96987a30354a2, get {url=https://www.mycontactform.com/samples/basiccontact.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Kirtan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63926/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 558fc53383e66e176cd96987a30354a2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [558fc53383e66e176cd96987a30354a2, get {url=https://www.mycontactform.com/samples/basiccontact.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Kirtan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63926/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 558fc53383e66e176cd96987a30354a2
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+at baseClass.BaseClass.openUrl(BaseClass.java:39)
+at allTest.StepDefinitions.navigationToHomePage(StepDefinitions.java:33)
+at ✽.The website Home Page is already open(file:///G:/Eclipse%20Workspace/2234444_SimpleCucumberProjectUsingScenarioOutline/src/test/resources/features/BasicContactForm.feature:4)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+at baseClass.BaseClass.openUrl(BaseClass.java:39)
+at allTest.StepDefinitions.navigationToHomePage(StepDefinitions.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:allTest.CucumberRunner@3c46e67a]" started-at="2023-01-08T14:19:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-08T14:19:04 IST" duration-ms="4481" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To submit the basic contact form with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Basic Contact Form"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b91f1f951e397e14dddc737bc96ed925, get {url=https://www.mycontactform.com/samples/basiccontact.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Kirtan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63963/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b91f1f951e397e14dddc737bc96ed925]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b91f1f951e397e14dddc737bc96ed925, get {url=https://www.mycontactform.com/samples/basiccontact.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Kirtan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63963/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b91f1f951e397e14dddc737bc96ed925
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+at baseClass.BaseClass.openUrl(BaseClass.java:39)
+at allTest.StepDefinitions.navigationToHomePage(StepDefinitions.java:33)
+at ✽.The website Home Page is already open(file:///G:/Eclipse%20Workspace/2234444_SimpleCucumberProjectUsingScenarioOutline/src/test/resources/features/BasicContactForm.feature:4)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:296)
+at baseClass.BaseClass.openUrl(BaseClass.java:39)
+at allTest.StepDefinitions.navigationToHomePage(StepDefinitions.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:allTest.CucumberRunner@3c46e67a]" started-at="2023-01-08T14:19:04 IST" name="tearDownClass" finished-at="2023-01-08T14:19:04 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- allTest.CucumberRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
